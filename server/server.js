@@ -10,7 +10,7 @@ app.use(express.json());
 
 MongoClient.connect('mongodb://127.0.0.1:27017', { useUnifiedTopology: true })
     .then((client) => {
-        const db = client.db('scienceHub'); 
+        const db = client.db('science_hub'); 
         const articlesCollection = db.collection('articles'); 
         const articlesRouter = createRouter(articlesCollection); 
         app.use('/api/articles', articlesRouter); 
