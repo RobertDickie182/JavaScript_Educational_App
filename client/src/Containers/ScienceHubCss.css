@@ -1,0 +1,33 @@
+.parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: large;
+  }
+
+.footer {
+    display: flex;
+    align-items: right;
+    margin-top: 3%;
+    margin-left: 75%;
+}
+
+.header {
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+
+.list {
+   color: #1B4332;
+   margin-left: 33%;
+   box-shadow: 0 20px 10px -20px rgba(0,0,0,0.45) inset, 0 -20px 10px -20px rgba(0,0,0,0.45) inset;
+   padding: 3%;
+   max-width: 30%;
+}
+
+.filterbar {
+    margin-bottom: 3%;
+    max-width: 30%;
+    margin-left: 35%;
+    padding: 1%;
+    
+}
