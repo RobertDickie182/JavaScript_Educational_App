@@ -2,7 +2,7 @@ import React from "react";
 
 const ArticleList = ({articles}) => {
     const listItems = articles.map((article, index) => {
-        return <item value ={index} key={article.id}>{article.title}<br/></item>
+        return <item value ={index} key={article._id}>{article.title}<br/></item>
     })
     return(
 

@@ -24,6 +24,7 @@ const ScienceHubContainer = () => {
       </header>
       <input className="filterbar" type='text'/>
       <ArticleList articles ={articles}/>
+      <TodaysQuiz/>
       <footer className='footer'>Made with 💜 by the Party Wizard's Fanclub</footer>
     </div>
   )
