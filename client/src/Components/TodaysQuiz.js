@@ -66,83 +66,83 @@ const TodaysQuiz = () => {
                 <label id="answer3">{questions[1].incorrect_answers[2]}</label><br></br>
                 <hr></hr>
                 <p>{questions[2].question}</p>
-                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer3(event.target.value)}/>
                 <label id="answer1">{questions[2].incorrect_answers[0]}</label><br></br>
-                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer3(event.target.value)}/>
                 <label id="answer4">{questions[2].correct_answer}</label><br></br>
-                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer3(event.target.value)}/>
                 <label id="answer2">{questions[2].incorrect_answers[1]}</label><br></br> 
-                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer3(event.target.value)}/>
                 <label id="answer3">{questions[2].incorrect_answers[2]}</label><br></br>
                 <hr></hr>
                 <p>{questions[3].question}</p>
-                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer4(event.target.value)}/>
                 <label id="answer1">{questions[3].incorrect_answers[0]}</label><br></br>
-                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer4(event.target.value)}/>
                 <label id="answer4">{questions[3].correct_answer}</label><br></br>
-                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer4(event.target.value)}/>
                 <label id="answer2">{questions[3].incorrect_answers[1]}</label><br></br> 
-                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer4(event.target.value)}/>
                 <label id="answer3">{questions[3].incorrect_answers[2]}</label><br></br>
                 <hr></hr>
                 <p>{questions[4].question}</p>
-                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer5(event.target.value)}/>
                 <label id="answer1">{questions[4].incorrect_answers[0]}</label><br></br>
-                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer5(event.target.value)}/>
                 <label id="answer4">{questions[4].correct_answer}</label><br></br>
-                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer5(event.target.value)}/>
                 <label id="answer2">{questions[4].incorrect_answers[1]}</label><br></br> 
-                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer5(event.target.value)}/>
                 <label id="answer3">{questions[4].incorrect_answers[2]}</label><br></br>
                 <hr></hr>
                 <p>{questions[5].question}</p>
-                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer6(event.target.value)}/>
                 <label id="answer1">{questions[5].incorrect_answers[0]}</label><br></br>
-                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer6(event.target.value)}/>
                 <label id="answer4">{questions[5].correct_answer}</label><br></br>
-                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer6(event.target.value)}/>
                 <label id="answer2">{questions[5].incorrect_answers[1]}</label><br></br> 
-                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer6(event.target.value)}/>
                 <label id="answer3">{questions[5].incorrect_answers[2]}</label><br></br>
                 <hr></hr>
                 <p>{questions[6].question}</p>
-                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer7(event.target.value)}/>
                 <label id="answer1">{questions[6].incorrect_answers[0]}</label><br></br>
-                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer7(event.target.value)}/>
                 <label id="answer4">{questions[6].correct_answer}</label><br></br>
-                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer7(event.target.value)}/>
                 <label id="answer2">{questions[6].incorrect_answers[1]}</label><br></br> 
-                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer7(event.target.value)}/>
                 <label id="answer3">{questions[6].incorrect_answers[2]}</label><br></br>
                 <hr></hr>
                 <p>{questions[7].question}</p>
-                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer8(event.target.value)}/>
                 <label id="answer1">{questions[7].incorrect_answers[0]}</label><br></br>
-                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer8(event.target.value)}/>
                 <label id="answer4">{questions[7].correct_answer}</label><br></br>
-                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer8(event.target.value)}/>
                 <label id="answer2">{questions[7].incorrect_answers[1]}</label><br></br> 
-                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer8(event.target.value)}/>
                 <label id="answer3">{questions[7].incorrect_answers[2]}</label><br></br>
                 <hr></hr>
                 <p>{questions[8].question}</p>
-                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer9(event.target.value)}/>
                 <label id="answer1">{questions[8].incorrect_answers[0]}</label><br></br>
-                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer9(event.target.value)}/>
                 <label id="answer4">{questions[8].correct_answer}</label><br></br>
-                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer9(event.target.value)}/>
                 <label id="answer2">{questions[8].incorrect_answers[1]}</label><br></br> 
-                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer9(event.target.value)}/>
                 <label id="answer3">{questions[8].incorrect_answers[2]}</label><br></br>
                 <hr></hr>
                 <p>{questions[9].question}</p>
-                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer1" type="radio" value={answer2} onChange={(event) => setAnswer10(event.target.value)}/>
                 <label id="answer1">{questions[9].incorrect_answers[0]}</label><br></br>
-                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer4" type="radio" value={answer2} onChange={(event) => setAnswer10(event.target.value)}/>
                 <label id="answer4">{questions[9].correct_answer}</label><br></br>
-                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer2" type="radio" value={answer2} onChange={(event) => setAnswer10(event.target.value)}/>
                 <label id="answer2">{questions[9].incorrect_answers[1]}</label><br></br> 
-                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer2(event.target.value)}/>
+                <input name="button" htmlFor="answer3" type="radio" value={answer2} onChange={(event) => setAnswer10(event.target.value)}/>
                 <label id="answer3">{questions[9].incorrect_answers[2]}</label><br></br>
                 <hr></hr>
                 {/* {questionListItems} */}
