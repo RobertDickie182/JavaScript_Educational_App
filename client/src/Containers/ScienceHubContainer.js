@@ -3,6 +3,7 @@ import ArticleService from '../Components/ArticleService'
 import ArticleList from '../Components/ArticleList'
 import TodaysQuiz from '../Components/TodaysQuiz'
 import './ScienceHubCss.css'
+import { Link } from "react-router-dom";
 
 const ScienceHubContainer = () => {
 
@@ -17,9 +18,9 @@ const ScienceHubContainer = () => {
   return (
     <div className='parent'>
       <header className='header'>
-        <a href="">Science Hub | </a>
-        <a href="">  Today's Quiz | </a>
-        <a href="">  Top Scores</a>
+        <Link to="/articles">Science Hub | </Link>
+        <Link to="/todaysquiz">Today's Quiz | </Link>
+        <Link to="/topscores">  Top Scores</Link>
       </header>
       <input className="filterbar" type='text'/>
       <ArticleList articles ={articles}/>
