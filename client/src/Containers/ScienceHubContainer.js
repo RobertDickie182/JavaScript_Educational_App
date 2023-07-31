@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import ArticleService from '../Components/ArticleService'
 import ArticleList from '../Components/ArticleList'
+import TodaysQuiz from '../Components/TodaysQuiz'
 import './ScienceHubCss.css'
 
 const ScienceHubContainer = () => {
