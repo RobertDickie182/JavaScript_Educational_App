@@ -21,7 +21,8 @@ const ScienceHubContainer = () => {
   
   return (
    
-    <Router>     
+    <Router> 
+          
          <div className='parent'>
             <header className='header'>
               <Link to="/articles">Science Hub | </Link>
