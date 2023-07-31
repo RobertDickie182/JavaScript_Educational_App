@@ -25,9 +25,9 @@ const ScienceHubContainer = () => {
           
          <div className='parent'>
             <header className='header'>
-              <Link to="/articles">Science Hub | </Link>
-              <Link to="/todaysquiz">Today's Quiz | </Link>
-              <Link to="/topscores">  Top Scores</Link>
+              <Link className='header' to="/articles">Science Hub</Link>
+              <Link className='header' to="/todaysquiz">Today's Quiz </Link>
+              <Link className='header' to="/topscores">Top Scores</Link>
             </header>
 
           <Routes>
