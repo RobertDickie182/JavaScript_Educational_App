@@ -101,7 +101,7 @@ const TodaysQuiz = () => {
             <p>{questions[1].question}</p>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button1"
                     htmlFor="answer1"
                     type="radio"
                     value={answer2}
@@ -113,7 +113,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button1"
                     htmlFor="answer2"
                     type="radio"
                     value={answer2}
@@ -125,7 +125,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button1"
                     htmlFor="answer3"
                     type="radio"
                     value={answer2}
@@ -137,7 +137,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button1"
                     htmlFor="answer4"
                     type="radio"
                     value={answer2}
@@ -153,11 +153,11 @@ const TodaysQuiz = () => {
             <p>{questions[2].question}</p>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button2"
                     htmlFor="answer1"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[2].incorrect_answers[0])}
+                    value={answer3}
+                    onClick={() => setAnswer3(questions[2].incorrect_answers[0])}
                 />
                 <label id="answer1">
                     {questions[2].incorrect_answers[0]}
@@ -165,11 +165,11 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button2"
                     htmlFor="answer2"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[2].incorrect_answers[1])}
+                    value={answer3}
+                    onClick={() => setAnswer3(questions[2].incorrect_answers[1])}
                 />
                 <label id="answer2">
                     {questions[2].incorrect_answers[1]}
@@ -177,11 +177,11 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button2"
                     htmlFor="answer3"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[2].incorrect_answers[2])}
+                    value={answer3}
+                    onClick={() => setAnswer3(questions[2].incorrect_answers[2])}
                 />
                 <label id="answer3">
                     {questions[2].incorrect_answers[2]}
@@ -189,11 +189,11 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button2"
                     htmlFor="answer4"
                     type="radio"
-                    value={answer1}
-                    onClick={(event) => setAnswer1(questions[2].correct_answer)}
+                    value={answer3}
+                    onClick={(event) => setAnswer3(questions[2].correct_answer)}
                 />
                 <label id="answer4">
                     {questions[2].correct_answer}
@@ -205,11 +205,11 @@ const TodaysQuiz = () => {
             <p>{questions[3].question}</p>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button3"
                     htmlFor="answer1"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[3].incorrect_answers[0])}
+                    value={answer4}
+                    onClick={() => setAnswer4(questions[3].incorrect_answers[0])}
                 />
                 <label id="answer1">
                     {questions[3].incorrect_answers[0]}
@@ -217,11 +217,11 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button3"
                     htmlFor="answer2"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[3].incorrect_answers[1])}
+                    value={answer4}
+                    onClick={() => setAnswer4(questions[3].incorrect_answers[1])}
                 />
                 <label id="answer2">
                     {questions[3].incorrect_answers[1]}
@@ -229,11 +229,11 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button3"
                     htmlFor="answer3"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[3].incorrect_answers[2])}
+                    value={answer4}
+                    onClick={() => setAnswer4(questions[3].incorrect_answers[2])}
                 />
                 <label id="answer3">
                     {questions[3].incorrect_answers[2]}
@@ -241,11 +241,11 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button3"
                     htmlFor="answer4"
                     type="radio"
-                    value={answer1}
-                    onClick={(event) => setAnswer1(questions[3].correct_answer)}
+                    value={answer4}
+                    onClick={(event) => setAnswer4(questions[3].correct_answer)}
                 />
                 <label id="answer4">
                     {questions[3].correct_answer}
@@ -257,7 +257,7 @@ const TodaysQuiz = () => {
             <p>{questions[4].question}</p>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button4"
                     htmlFor="answer1"
                     type="radio"
                     value={answer1}
@@ -269,7 +269,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button4"
                     htmlFor="answer2"
                     type="radio"
                     value={answer1}
@@ -281,7 +281,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button4"
                     htmlFor="answer3"
                     type="radio"
                     value={answer1}
@@ -293,7 +293,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button4"
                     htmlFor="answer4"
                     type="radio"
                     value={answer1}
@@ -309,7 +309,7 @@ const TodaysQuiz = () => {
             <p>{questions[5].question}</p>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button5"
                     htmlFor="answer1"
                     type="radio"
                     value={answer1}
@@ -321,7 +321,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button5"
                     htmlFor="answer2"
                     type="radio"
                     value={answer1}
@@ -333,7 +333,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button5"
                     htmlFor="answer3"
                     type="radio"
                     value={answer1}
@@ -345,7 +345,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button5"
                     htmlFor="answer4"
                     type="radio"
                     value={answer1}
@@ -361,7 +361,7 @@ const TodaysQuiz = () => {
             <p>{questions[6].question}</p>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button6"
                     htmlFor="answer1"
                     type="radio"
                     value={answer1}
@@ -373,7 +373,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button6"
                     htmlFor="answer2"
                     type="radio"
                     value={answer1}
@@ -385,7 +385,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button6"
                     htmlFor="answer3"
                     type="radio"
                     value={answer1}
@@ -397,7 +397,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button6"
                     htmlFor="answer4"
                     type="radio"
                     value={answer1}
@@ -413,7 +413,7 @@ const TodaysQuiz = () => {
             <p>{questions[7].question}</p>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button7"
                     htmlFor="answer1"
                     type="radio"
                     value={answer1}
@@ -425,7 +425,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button7"
                     htmlFor="answer2"
                     type="radio"
                     value={answer1}
@@ -437,7 +437,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button7"
                     htmlFor="answer3"
                     type="radio"
                     value={answer1}
@@ -449,7 +449,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button7"
                     htmlFor="answer4"
                     type="radio"
                     value={answer1}
@@ -465,7 +465,7 @@ const TodaysQuiz = () => {
             <p>{questions[8].question}</p>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button8"
                     htmlFor="answer1"
                     type="radio"
                     value={answer1}
@@ -477,7 +477,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button8"
                     htmlFor="answer2"
                     type="radio"
                     value={answer1}
@@ -489,7 +489,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button8"
                     htmlFor="answer3"
                     type="radio"
                     value={answer1}
@@ -501,7 +501,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button8"
                     htmlFor="answer4"
                     type="radio"
                     value={answer1}
@@ -517,7 +517,7 @@ const TodaysQuiz = () => {
             <p>{questions[9].question}</p>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button9"
                     htmlFor="answer1"
                     type="radio"
                     value={answer1}
@@ -529,7 +529,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button9"
                     htmlFor="answer2"
                     type="radio"
                     value={answer1}
@@ -541,7 +541,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button9"
                     htmlFor="answer3"
                     type="radio"
                     value={answer1}
@@ -553,7 +553,7 @@ const TodaysQuiz = () => {
             </div>
             <div className="answer">
                 <input
-                    name="button"
+                    name="button9"
                     htmlFor="answer4"
                     type="radio"
                     value={answer1}
