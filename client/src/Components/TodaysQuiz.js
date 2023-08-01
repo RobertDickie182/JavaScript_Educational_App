@@ -105,7 +105,7 @@ const TodaysQuiz = () => {
                     htmlFor="answer1"
                     type="radio"
                     value={answer2}
-                    onClick={() => setAnswer1(questions[1].incorrect_answers[0])}
+                    onClick={() => setAnswer2(questions[1].incorrect_answers[0])}
                 />
                 <label id="answer1">
                     {questions[1].incorrect_answers[0]}
@@ -117,7 +117,7 @@ const TodaysQuiz = () => {
                     htmlFor="answer2"
                     type="radio"
                     value={answer2}
-                    onClick={() => setAnswer1(questions[1].incorrect_answers[1])}
+                    onClick={() => setAnswer2(questions[1].incorrect_answers[1])}
                 />
                 <label id="answer2">
                     {questions[1].incorrect_answers[1]}
@@ -129,7 +129,7 @@ const TodaysQuiz = () => {
                     htmlFor="answer3"
                     type="radio"
                     value={answer2}
-                    onClick={() => setAnswer1(questions[1].incorrect_answers[2])}
+                    onClick={() => setAnswer2(questions[1].incorrect_answers[2])}
                 />
                 <label id="answer3">
                     {questions[1].incorrect_answers[2]}
@@ -141,7 +141,7 @@ const TodaysQuiz = () => {
                     htmlFor="answer4"
                     type="radio"
                     value={answer2}
-                    onClick={(event) => setAnswer1(questions[1].correct_answer)}
+                    onClick={(event) => setAnswer2(questions[1].correct_answer)}
                 />
                 <label id="answer4">
                     {questions[1].correct_answer}
