@@ -25,7 +25,19 @@ const TodaysQuiz = () => {
     const getQuestions = async function () {
         const res = await fetch("https://opentdb.com/api.php?amount=10&category=17&difficulty=easy&type=multiple&encode=url3986")
         const questions = await res.json();
-        setQuestions(questions.results)
+        const formattedQuestions = questions.results.map((result) => ({
+            ...result,
+            question: decodeURIComponent(result.question),
+            correct_answer: decodeURIComponent(result.correct_answer),
+            incorrect_answers: result.incorrect_answers.map((answer) => (
+                decodeURIComponent(answer)
+            ))
+        }))
+
+        setQuestions(formattedQuestions)
+
+    
+        
 
         
     }
