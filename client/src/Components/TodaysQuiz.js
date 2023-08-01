@@ -25,7 +25,7 @@ const TodaysQuiz = () => {
     const getQuestions = async function () {
         const res = await fetch("https://opentdb.com/api.php?amount=10&category=17&difficulty=easy&type=multiple&encode=url3986")
         const questions = await res.json();
-        setQuestions(questions.results);
+        setQuestions(questions.results)
 
         
     }
