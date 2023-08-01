@@ -1,12 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ArticleList = ({articles}) => {
-    const listItems = articles.map((article, index) => {
-        return <item value ={index} key={article._id}>{article.title}<br/></item>
+ const listItems = articles.map((article) => {
+      return <Link className="articlecolor" to={`/articles/${article._id}`}  key={article._id}>{article.title}<br/></Link>
+
     })
     return(
-
-        <a href="" className="list">{listItems}</a>
+        
+       <>
+            
+            <input className="filterbar" type="text" placeholder="Search for something..."/>
+            
+            
+            
+            <ul className="list">{listItems}</ul>
+        
+        </>
+        
+        
     )
 }
 

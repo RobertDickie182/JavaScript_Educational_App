@@ -150,12 +150,6 @@ const TodaysQuiz = () => {
             
         )
 
-
-
-   
-    
-    
-    
 }
 
 export default TodaysQuiz;

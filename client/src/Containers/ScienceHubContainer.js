@@ -4,6 +4,10 @@ import ArticleList from '../Components/ArticleList'
 import TodaysQuiz from '../Components/TodaysQuiz'
 import './ScienceHubCss.css'
 import { Link } from "react-router-dom";
+import ErrorPage from "../Components/ErrorPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import TopScores from "../Components/TopScores";
+import ScienceHubArticle from '../Components/ScienceHubArticle';
 
 const ScienceHubContainer = () => {
 
@@ -14,19 +18,30 @@ const ScienceHubContainer = () => {
       .then(articles => setArticles(articles))
   }, [])
 
-  console.log(articles);
+  
   return (
-    <div className='parent'>
-      <header className='header'>
-        <Link to="/articles">Science Hub | </Link>
-        <Link to="/todaysquiz">Today's Quiz | </Link>
-        <Link to="/topscores">  Top Scores</Link>
-      </header>
-      <input className="filterbar" type='text'/>
-      <ArticleList articles ={articles}/>
-      {/* <TodaysQuiz/> */}
-      <footer className='footer'>Made with 💜 by the Party Wizard's Fanclub</footer>
-    </div>
+   
+    <Router> 
+          
+         <div className='parent'>
+            <header className='header'>
+              <Link className='header' to="/articles">Science Hub</Link>
+              <Link className='header' to="/todaysquiz">Today's Quiz </Link>
+              <Link className='header' to="/topscores">Top Scores</Link>
+            </header>
+
+          <Routes>
+            <Route path="/articles" element={<ArticleList articles={articles}/>}/>
+            <Route path="/articles/:id" element={<ScienceHubArticle  articles={articles}/>}/>
+            <Route path="/todaysquiz" element={<TodaysQuiz/>}/> 
+            <Route path="/topscores" element={<TopScores/>}/>
+            <Route path="/*" element={<ErrorPage/>}/>
+          </Routes>
+
+          <footer className='footer'>Made with 💜 by the Party Wizard's Fanclub</footer>
+          </div>
+      </Router>
+
   )
 }
 
