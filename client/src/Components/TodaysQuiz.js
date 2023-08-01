@@ -461,6 +461,110 @@ const TodaysQuiz = () => {
             </div>
             <hr></hr>
         </div>
+            <div className="question">
+            <p>{questions[8].question}</p>
+            <div className="answer">
+                <input
+                    name="button"
+                    htmlFor="answer1"
+                    type="radio"
+                    value={answer1}
+                    onClick={() => setAnswer1(questions[8].incorrect_answers[0])}
+                />
+                <label id="answer1">
+                    {questions[8].incorrect_answers[0]}
+                </label>
+            </div>
+            <div className="answer">
+                <input
+                    name="button"
+                    htmlFor="answer2"
+                    type="radio"
+                    value={answer1}
+                    onClick={() => setAnswer1(questions[8].incorrect_answers[1])}
+                />
+                <label id="answer2">
+                    {questions[8].incorrect_answers[1]}
+                </label>
+            </div>
+            <div className="answer">
+                <input
+                    name="button"
+                    htmlFor="answer3"
+                    type="radio"
+                    value={answer1}
+                    onClick={() => setAnswer1(questions[8].incorrect_answers[2])}
+                />
+                <label id="answer3">
+                    {questions[8].incorrect_answers[2]}
+                </label>
+            </div>
+            <div className="answer">
+                <input
+                    name="button"
+                    htmlFor="answer4"
+                    type="radio"
+                    value={answer1}
+                    onClick={(event) => setAnswer1(questions[8].correct_answer)}
+                />
+                <label id="answer4">
+                    {questions[8].correct_answer}
+                </label>
+            </div>
+            <hr></hr>
+        </div>
+            <div className="question">
+            <p>{questions[9].question}</p>
+            <div className="answer">
+                <input
+                    name="button"
+                    htmlFor="answer1"
+                    type="radio"
+                    value={answer1}
+                    onClick={() => setAnswer1(questions[9].incorrect_answers[0])}
+                />
+                <label id="answer1">
+                    {questions[9].incorrect_answers[0]}
+                </label>
+            </div>
+            <div className="answer">
+                <input
+                    name="button"
+                    htmlFor="answer2"
+                    type="radio"
+                    value={answer1}
+                    onClick={() => setAnswer1(questions[9].incorrect_answers[1])}
+                />
+                <label id="answer2">
+                    {questions[9].incorrect_answers[1]}
+                </label>
+            </div>
+            <div className="answer">
+                <input
+                    name="button"
+                    htmlFor="answer3"
+                    type="radio"
+                    value={answer1}
+                    onClick={() => setAnswer1(questions[9].incorrect_answers[2])}
+                />
+                <label id="answer3">
+                    {questions[9].incorrect_answers[2]}
+                </label>
+            </div>
+            <div className="answer">
+                <input
+                    name="button"
+                    htmlFor="answer4"
+                    type="radio"
+                    value={answer1}
+                    onClick={(event) => setAnswer1(questions[9].correct_answer)}
+                />
+                <label id="answer4">
+                    {questions[9].correct_answer}
+                </label>
+            </div>
+            <hr></hr>
+        </div>
 
         </>
             
