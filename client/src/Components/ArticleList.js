@@ -1,24 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ArticleFilter from "./ArticleFilter";
 
-const ArticleList = ({articles}) => {
- const listItems = articles.map((article) => {
-      return <Link className="articlecolor" to={`/articles/${article._id}`}  key={article._id}>{article.title}<br/></Link>
+const ArticleList = ({ filteredArticles, filter, setFilter }) => {
+
+
+    const listItems = filteredArticles.map((article) => {
+        return <Link className="articlecolor" to={`/articles/${article._id}`} key={article._id}>{article.title}<br /></Link>
 
     })
-    return(
-        
-       <>
-            
-            <input className="filterbar" type="text" placeholder="Search for something..."/>
-            
-            
-            
+
+
+    return (
+        <>
+            <ArticleFilter setFilterCallback={(filter, setFilter)} />
+            {filter && <p>You are searching for: {filter}</p>}
+
+
             <ul className="list">{listItems}</ul>
-        
+
         </>
-        
-        
     )
 }
 
