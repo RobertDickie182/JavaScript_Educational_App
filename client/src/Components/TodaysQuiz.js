@@ -260,8 +260,8 @@ const TodaysQuiz = () => {
                     name="button4"
                     htmlFor="answer1"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[4].incorrect_answers[0])}
+                    value={answer5}
+                    onClick={() => setAnswer5(questions[4].incorrect_answers[0])}
                 />
                 <label id="answer1">
                     {questions[4].incorrect_answers[0]}
@@ -272,8 +272,8 @@ const TodaysQuiz = () => {
                     name="button4"
                     htmlFor="answer2"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[4].incorrect_answers[1])}
+                    value={answer5}
+                    onClick={() => setAnswer5(questions[4].incorrect_answers[1])}
                 />
                 <label id="answer2">
                     {questions[4].incorrect_answers[1]}
@@ -284,8 +284,8 @@ const TodaysQuiz = () => {
                     name="button4"
                     htmlFor="answer3"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[4].incorrect_answers[2])}
+                    value={answer5}
+                    onClick={() => setAnswer5(questions[4].incorrect_answers[2])}
                 />
                 <label id="answer3">
                     {questions[4].incorrect_answers[2]}
@@ -296,8 +296,8 @@ const TodaysQuiz = () => {
                     name="button4"
                     htmlFor="answer4"
                     type="radio"
-                    value={answer1}
-                    onClick={(event) => setAnswer1(questions[4].correct_answer)}
+                    value={answer5}
+                    onClick={(event) => setAnswer5(questions[4].correct_answer)}
                 />
                 <label id="answer4">
                     {questions[4].correct_answer}
@@ -312,8 +312,8 @@ const TodaysQuiz = () => {
                     name="button5"
                     htmlFor="answer1"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[5].incorrect_answers[0])}
+                    value={answer6}
+                    onClick={() => setAnswer6(questions[5].incorrect_answers[0])}
                 />
                 <label id="answer1">
                     {questions[5].incorrect_answers[0]}
@@ -324,8 +324,8 @@ const TodaysQuiz = () => {
                     name="button5"
                     htmlFor="answer2"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[5].incorrect_answers[1])}
+                    value={answer6}
+                    onClick={() => setAnswer6(questions[5].incorrect_answers[1])}
                 />
                 <label id="answer2">
                     {questions[5].incorrect_answers[1]}
@@ -336,8 +336,8 @@ const TodaysQuiz = () => {
                     name="button5"
                     htmlFor="answer3"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[5].incorrect_answers[2])}
+                    value={answer6}
+                    onClick={() => setAnswer6(questions[5].incorrect_answers[2])}
                 />
                 <label id="answer3">
                     {questions[5].incorrect_answers[2]}
@@ -348,8 +348,8 @@ const TodaysQuiz = () => {
                     name="button5"
                     htmlFor="answer4"
                     type="radio"
-                    value={answer1}
-                    onClick={(event) => setAnswer1(questions[5].correct_answer)}
+                    value={answer6}
+                    onClick={(event) => setAnswer6(questions[5].correct_answer)}
                 />
                 <label id="answer4">
                     {questions[5].correct_answer}
@@ -364,8 +364,8 @@ const TodaysQuiz = () => {
                     name="button6"
                     htmlFor="answer1"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[6].incorrect_answers[0])}
+                    value={answer7}
+                    onClick={() => setAnswer7(questions[6].incorrect_answers[0])}
                 />
                 <label id="answer1">
                     {questions[6].incorrect_answers[0]}
@@ -376,8 +376,8 @@ const TodaysQuiz = () => {
                     name="button6"
                     htmlFor="answer2"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[6].incorrect_answers[1])}
+                    value={answer7}
+                    onClick={() => setAnswer7(questions[6].incorrect_answers[1])}
                 />
                 <label id="answer2">
                     {questions[6].incorrect_answers[1]}
@@ -388,8 +388,8 @@ const TodaysQuiz = () => {
                     name="button6"
                     htmlFor="answer3"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[6].incorrect_answers[2])}
+                    value={answer7}
+                    onClick={() => setAnswer7(questions[6].incorrect_answers[2])}
                 />
                 <label id="answer3">
                     {questions[6].incorrect_answers[2]}
@@ -400,8 +400,8 @@ const TodaysQuiz = () => {
                     name="button6"
                     htmlFor="answer4"
                     type="radio"
-                    value={answer1}
-                    onClick={(event) => setAnswer1(questions[6].correct_answer)}
+                    value={answer7}
+                    onClick={(event) => setAnswer7(questions[6].correct_answer)}
                 />
                 <label id="answer4">
                     {questions[6].correct_answer}
@@ -416,8 +416,8 @@ const TodaysQuiz = () => {
                     name="button7"
                     htmlFor="answer1"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[7].incorrect_answers[0])}
+                    value={answer8}
+                    onClick={() => setAnswer8(questions[7].incorrect_answers[0])}
                 />
                 <label id="answer1">
                     {questions[7].incorrect_answers[0]}
@@ -428,8 +428,8 @@ const TodaysQuiz = () => {
                     name="button7"
                     htmlFor="answer2"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[7].incorrect_answers[1])}
+                    value={answer8}
+                    onClick={() => setAnswer8(questions[7].incorrect_answers[1])}
                 />
                 <label id="answer2">
                     {questions[7].incorrect_answers[1]}
@@ -440,8 +440,8 @@ const TodaysQuiz = () => {
                     name="button7"
                     htmlFor="answer3"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[7].incorrect_answers[2])}
+                    value={answer8}
+                    onClick={() => setAnswer8(questions[7].incorrect_answers[2])}
                 />
                 <label id="answer3">
                     {questions[7].incorrect_answers[2]}
@@ -452,8 +452,8 @@ const TodaysQuiz = () => {
                     name="button7"
                     htmlFor="answer4"
                     type="radio"
-                    value={answer1}
-                    onClick={(event) => setAnswer1(questions[7].correct_answer)}
+                    value={answer8}
+                    onClick={(event) => setAnswer8(questions[7].correct_answer)}
                 />
                 <label id="answer4">
                     {questions[7].correct_answer}
@@ -468,8 +468,8 @@ const TodaysQuiz = () => {
                     name="button8"
                     htmlFor="answer1"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[8].incorrect_answers[0])}
+                    value={answer9}
+                    onClick={() => setAnswer9(questions[8].incorrect_answers[0])}
                 />
                 <label id="answer1">
                     {questions[8].incorrect_answers[0]}
@@ -480,8 +480,8 @@ const TodaysQuiz = () => {
                     name="button8"
                     htmlFor="answer2"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[8].incorrect_answers[1])}
+                    value={answer9}
+                    onClick={() => setAnswer9(questions[8].incorrect_answers[1])}
                 />
                 <label id="answer2">
                     {questions[8].incorrect_answers[1]}
@@ -492,8 +492,8 @@ const TodaysQuiz = () => {
                     name="button8"
                     htmlFor="answer3"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[8].incorrect_answers[2])}
+                    value={answer9}
+                    onClick={() => setAnswer9(questions[8].incorrect_answers[2])}
                 />
                 <label id="answer3">
                     {questions[8].incorrect_answers[2]}
@@ -504,8 +504,8 @@ const TodaysQuiz = () => {
                     name="button8"
                     htmlFor="answer4"
                     type="radio"
-                    value={answer1}
-                    onClick={(event) => setAnswer1(questions[8].correct_answer)}
+                    value={answer9}
+                    onClick={(event) => setAnswer9(questions[8].correct_answer)}
                 />
                 <label id="answer4">
                     {questions[8].correct_answer}
@@ -520,8 +520,8 @@ const TodaysQuiz = () => {
                     name="button9"
                     htmlFor="answer1"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[9].incorrect_answers[0])}
+                    value={answer10}
+                    onClick={() => setAnswer10(questions[9].incorrect_answers[0])}
                 />
                 <label id="answer1">
                     {questions[9].incorrect_answers[0]}
@@ -532,8 +532,8 @@ const TodaysQuiz = () => {
                     name="button9"
                     htmlFor="answer2"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[9].incorrect_answers[1])}
+                    value={answer10}
+                    onClick={() => setAnswer10(questions[9].incorrect_answers[1])}
                 />
                 <label id="answer2">
                     {questions[9].incorrect_answers[1]}
@@ -544,8 +544,8 @@ const TodaysQuiz = () => {
                     name="button9"
                     htmlFor="answer3"
                     type="radio"
-                    value={answer1}
-                    onClick={() => setAnswer1(questions[9].incorrect_answers[2])}
+                    value={answer10}
+                    onClick={() => setAnswer10(questions[9].incorrect_answers[2])}
                 />
                 <label id="answer3">
                     {questions[9].incorrect_answers[2]}
@@ -556,8 +556,8 @@ const TodaysQuiz = () => {
                     name="button9"
                     htmlFor="answer4"
                     type="radio"
-                    value={answer1}
-                    onClick={(event) => setAnswer1(questions[9].correct_answer)}
+                    value={answer10}
+                    onClick={(event) => setAnswer10(questions[9].correct_answer)}
                 />
                 <label id="answer4">
                     {questions[9].correct_answer}
