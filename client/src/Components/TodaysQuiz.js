@@ -51,12 +51,13 @@ const TodaysQuiz = () => {
 
         
         if (questions.length === 0 ) {
-            return "loading..."
+            return <p className="showarticlebody">"loading..."</p>
         }
 
         return (
 
             <>
+            <h1 className="showarticletitle">Let's test your knowledge!</h1>
             <div className="showarticlebody">
             <p>{questions[0].question}</p>
             <div className="showarticlebody">
@@ -577,7 +578,8 @@ const TodaysQuiz = () => {
             </div>
             <hr className="linequiz"></hr>
         </div>
-
+        <button className="buttonquiz" role="button">Results!</button>
+        <p className="showarticletitle">Well done, you have scored </p>
         </>
             
         )

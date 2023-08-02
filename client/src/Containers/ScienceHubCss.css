@@ -59,6 +59,7 @@
     max-width: 30%;
     max-height: 10%;
     margin-left: 35%;
+    min-width: 30%;
     padding: 1%;
     background-image: linear-gradient(bottom, #95D5B2 5%, #74C69D 100%);
     background-image: -o-linear-gradient(bottom, #95D5B2 5%, #74C69D 100%);
@@ -123,7 +124,7 @@ outline: none;
     letter-spacing: .1em;
     padding: 0;
     border-spacing: 0;
-    margin-top: 7%;
+    margin-top: 3%;
     border-collapse: collapse;
     max-height: 20%;
     text-shadow: 
@@ -157,5 +158,25 @@ outline: none;
 
 .linequiz {
     border-color: #1B4332;
+
+}
+
+.buttonquiz {
+  color: #B7E4C7;
+  padding: 15px 25px;
+  background-color: #40916C;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  max-width: 25%;
+  border: 0;
+  margin-left: 33%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
 
 }
