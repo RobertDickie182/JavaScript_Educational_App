@@ -57,9 +57,9 @@ const TodaysQuiz = () => {
         return (
 
             <>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[0].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button"
                     htmlFor="answer1"
@@ -71,7 +71,7 @@ const TodaysQuiz = () => {
                     {questions[0].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button"
                     htmlFor="answer2"
@@ -83,7 +83,7 @@ const TodaysQuiz = () => {
                     {questions[0].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button"
                     htmlFor="answer3"
@@ -95,7 +95,7 @@ const TodaysQuiz = () => {
                     {questions[0].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button"
                     htmlFor="answer4"
@@ -107,11 +107,11 @@ const TodaysQuiz = () => {
                     {questions[0].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[1].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button1"
                     htmlFor="answer1"
@@ -123,7 +123,7 @@ const TodaysQuiz = () => {
                     {questions[1].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button1"
                     htmlFor="answer2"
@@ -135,7 +135,7 @@ const TodaysQuiz = () => {
                     {questions[1].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button1"
                     htmlFor="answer3"
@@ -147,7 +147,7 @@ const TodaysQuiz = () => {
                     {questions[1].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button1"
                     htmlFor="answer4"
@@ -159,11 +159,11 @@ const TodaysQuiz = () => {
                     {questions[1].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[2].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button2"
                     htmlFor="answer1"
@@ -175,7 +175,7 @@ const TodaysQuiz = () => {
                     {questions[2].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button2"
                     htmlFor="answer2"
@@ -187,7 +187,7 @@ const TodaysQuiz = () => {
                     {questions[2].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button2"
                     htmlFor="answer3"
@@ -199,7 +199,7 @@ const TodaysQuiz = () => {
                     {questions[2].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button2"
                     htmlFor="answer4"
@@ -211,11 +211,11 @@ const TodaysQuiz = () => {
                     {questions[2].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[3].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button3"
                     htmlFor="answer1"
@@ -227,7 +227,7 @@ const TodaysQuiz = () => {
                     {questions[3].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button3"
                     htmlFor="answer2"
@@ -239,7 +239,7 @@ const TodaysQuiz = () => {
                     {questions[3].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button3"
                     htmlFor="answer3"
@@ -251,7 +251,7 @@ const TodaysQuiz = () => {
                     {questions[3].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button3"
                     htmlFor="answer4"
@@ -263,11 +263,11 @@ const TodaysQuiz = () => {
                     {questions[3].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[4].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button4"
                     htmlFor="answer1"
@@ -279,7 +279,7 @@ const TodaysQuiz = () => {
                     {questions[4].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button4"
                     htmlFor="answer2"
@@ -291,7 +291,7 @@ const TodaysQuiz = () => {
                     {questions[4].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button4"
                     htmlFor="answer3"
@@ -303,7 +303,7 @@ const TodaysQuiz = () => {
                     {questions[4].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button4"
                     htmlFor="answer4"
@@ -315,11 +315,11 @@ const TodaysQuiz = () => {
                     {questions[4].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[5].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button5"
                     htmlFor="answer1"
@@ -331,7 +331,7 @@ const TodaysQuiz = () => {
                     {questions[5].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button5"
                     htmlFor="answer2"
@@ -343,7 +343,7 @@ const TodaysQuiz = () => {
                     {questions[5].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button5"
                     htmlFor="answer3"
@@ -355,7 +355,7 @@ const TodaysQuiz = () => {
                     {questions[5].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button5"
                     htmlFor="answer4"
@@ -367,11 +367,11 @@ const TodaysQuiz = () => {
                     {questions[5].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[6].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button6"
                     htmlFor="answer1"
@@ -383,7 +383,7 @@ const TodaysQuiz = () => {
                     {questions[6].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button6"
                     htmlFor="answer2"
@@ -395,7 +395,7 @@ const TodaysQuiz = () => {
                     {questions[6].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button6"
                     htmlFor="answer3"
@@ -407,7 +407,7 @@ const TodaysQuiz = () => {
                     {questions[6].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button6"
                     htmlFor="answer4"
@@ -419,11 +419,11 @@ const TodaysQuiz = () => {
                     {questions[6].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[7].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button7"
                     htmlFor="answer1"
@@ -435,7 +435,7 @@ const TodaysQuiz = () => {
                     {questions[7].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button7"
                     htmlFor="answer2"
@@ -447,7 +447,7 @@ const TodaysQuiz = () => {
                     {questions[7].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button7"
                     htmlFor="answer3"
@@ -459,7 +459,7 @@ const TodaysQuiz = () => {
                     {questions[7].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button7"
                     htmlFor="answer4"
@@ -471,11 +471,11 @@ const TodaysQuiz = () => {
                     {questions[7].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[8].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button8"
                     htmlFor="answer1"
@@ -487,7 +487,7 @@ const TodaysQuiz = () => {
                     {questions[8].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button8"
                     htmlFor="answer2"
@@ -499,7 +499,7 @@ const TodaysQuiz = () => {
                     {questions[8].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button8"
                     htmlFor="answer3"
@@ -511,7 +511,7 @@ const TodaysQuiz = () => {
                     {questions[8].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button8"
                     htmlFor="answer4"
@@ -523,11 +523,11 @@ const TodaysQuiz = () => {
                     {questions[8].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
-            <div className="question">
+            <div className="showarticlebody">
             <p>{questions[9].question}</p>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button9"
                     htmlFor="answer1"
@@ -539,7 +539,7 @@ const TodaysQuiz = () => {
                     {questions[9].incorrect_answers[0]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button9"
                     htmlFor="answer2"
@@ -551,7 +551,7 @@ const TodaysQuiz = () => {
                     {questions[9].incorrect_answers[1]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button9"
                     htmlFor="answer3"
@@ -563,7 +563,7 @@ const TodaysQuiz = () => {
                     {questions[9].incorrect_answers[2]}
                 </label>
             </div>
-            <div className="answer">
+            <div className="showarticlebody">
                 <input
                     name="button9"
                     htmlFor="answer4"
@@ -575,7 +575,7 @@ const TodaysQuiz = () => {
                     {questions[9].correct_answer}
                 </label>
             </div>
-            <hr></hr>
+            <hr className="linequiz"></hr>
         </div>
 
         </>

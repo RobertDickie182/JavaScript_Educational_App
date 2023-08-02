@@ -9,10 +9,11 @@ const articlesBody = articles.find(article => article._id === id);
 return (
 
     <>
-        {articlesBody.title} <br/> 
-        <p>{articlesBody.body}</p>
+    <h1 className="showarticletitle">{articlesBody.title}</h1> 
+    <br/> 
+    <p className="showarticlebody">{articlesBody.body}</p>
 
-    </>
+</>
 )
 
 }
