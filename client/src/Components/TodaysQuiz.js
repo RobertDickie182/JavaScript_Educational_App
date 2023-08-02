@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import QuestionCard from "./QuestionCard";
+
 
 const TodaysQuiz = () => {
     const [questions, setQuestions] = useState([])
-    // const [correctAnswers, setCorrectAnswers] = useState(0)
+    
     const [answer1, setAnswer1] = useState("")
     const [answer2, setAnswer2] = useState("")
     const [answer3, setAnswer3] = useState("")
@@ -16,20 +16,6 @@ const TodaysQuiz = () => {
     const [answer9, setAnswer9] = useState("")
     const [answer10, setAnswer10] = useState("")
 
-    // const [score, setScore] = useState(0);
-    
-    // const [answers, setAnswers] = useState({ - this is linked to function on line 57 and is using a loop rather than the 10 if statements we are using.
-    //     1: "",
-    //     2: "",
-    //     3: "",
-    //     4: "",
-    //     5: "",
-    //     6: "",
-    //     7: "",
-    //     8: "",
-    //     9: "",
-    //     10: ""
-    // })
 
     useEffect(() => {
         getQuestions();
@@ -54,11 +40,6 @@ const TodaysQuiz = () => {
         event.preventDefault()
         let correctAnswers = 0;  
 
-        // for  (let key in Object.keys(answers)) {  -- see above
-        //     if (answers[key] === questions[key - 1].correct_answer){
-        //         correctAnswers++
-        //     }
-        // }
 
     
         if (answer1 === questions[0].correct_answer) {
