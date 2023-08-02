@@ -8,6 +8,7 @@ function Question() {
 
   const score = useSelector((state) => state.score)
   const formattedQuestions = useSelector((state) => state.questions)
+  console.log(formattedQuestions)
 
   useEffect(() => {
     getQuestions();
