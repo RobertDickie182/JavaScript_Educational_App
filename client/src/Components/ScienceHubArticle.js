@@ -10,7 +10,7 @@ return (
 
     <>
     <h1 className="showarticletitle">{articlesBody.title}</h1> 
-    <br/> 
+    
     <p className="showarticlebody">{articlesBody.body}</p>
 
 </>

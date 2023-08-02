@@ -13,10 +13,11 @@ const ArticleList = ({ filteredArticles, filter, setFilter }) => {
   
   
       return(
-         <>    
+        <>
+         <div>    
               <ArticleFilter setFilterCallback={(filter, setFilter)}/>
               {filter && <p className="youfilter">You are searching for: {filter}</p>}
-              
+         </div>     
               
               <ul className="list">{listItems}</ul>
           
