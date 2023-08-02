@@ -32,6 +32,10 @@
     margin-left: 2%;
     margin-bottom: 3%;
     color: #52B788;
+    text-transform: uppercase;
+    font: 70 1em/1 "Oswald", sans-serif;
+    text-shadow: 2px 2px 6px rgba(64, 145, 108, 1);
+    
 }
 
 .list, list:link, list:visited  {
@@ -40,15 +44,20 @@
    box-shadow: 0 30px 20px -30px #40916C inset, 0 -30px 20px -30px #40916C inset;
    padding: 3%;
    max-width: 30%;
+
+   
 }
 
 .articlecolor {
     color: #52B788;
+    
+  
 }
 
 .filterbar {
     margin-bottom: 3%;
     max-width: 30%;
+    max-height: 10%;
     margin-left: 35%;
     padding: 1%;
     background-image: linear-gradient(bottom, #95D5B2 5%, #74C69D 100%);
@@ -94,4 +103,59 @@ border: 1px solid #081C15;
 
 
 outline: none;
+}
+
+.youfilter {
+    margin-left: 36%;
+    color: #52B788;
+    max-height: 10%;
+
+}
+
+.showarticletitle {
+
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: #B7E4C7;
+    letter-spacing: .1em;
+    padding: 0;
+    border-spacing: 0;
+    margin-top: 7%;
+    border-collapse: collapse;
+    max-height: 20%;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #40916C, 
+      0 2px 0 #40916C, 
+      0 3px 0 #40916C, 
+      0 4px 0 #2D6A4F,         
+      0 5px 0 #2D6A4F, 
+      0 6px 0 #2D6A4F, 
+      0 7px 0 #2D6A4F, 
+      0 8px 0 #1B4332, 
+      0 9px 0 #1B4332, 
+      0 10px 0 #081C15, 
+      0 11px 0 #081C15, 
+      0 12px 0 #081C15, 
+      0 13px 0 #081C15, 
+      0 14px 0 #081C15, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9); 
+    }
+
+.showarticlebody {
+   
+    
+    color: #B7E4C7;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.linequiz {
+    border-color: #1B4332;
+
 }
