@@ -5,6 +5,15 @@ const initState = {
   }
   const Reducer = (state = initState, action) => {
     switch (action.type) {
+        case "CHANGE_LOADING":
+      return {
+        ...state,
+        options: {
+          ...state.options,
+          loading: action.value
+        }
+    }
+        
         case 'SET_QUESTIONS':
       return {
         ...state,

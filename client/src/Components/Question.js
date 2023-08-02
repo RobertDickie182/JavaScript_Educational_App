@@ -1,45 +1,31 @@
-import React, { useState, useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-
-const decodeHTML = function (html) {
-  const txt = document.createElement('textarea')
-  txt.innerHTML = html
-  return txt.value
-}
+import React, { useState, useEffect, useSelector, useDispatch } from 'react'
 
 function Question() {
   const [questions, setQuestions] = useState([])
   const [answerSelected, setAnswerSelected] = useState(false)
   const [selectedAnswer, setSelectedAnswer] = useState(null)
+  const [options, setOptions] = useState([])
 
   const score = useSelector((state) => state.score)
-  const encodedQuestions = useSelector((state) => state.questions)
+  const formattedQuestions = useSelector((state) => state.questions)
+
+  useEffect(() => {
+    getQuestions();
+    }, [])
 
   const getQuestions = async function () {
-    const res = await fetch('https://opentdb.com/api.php?amount=10&category=17&difficulty=easy&type=multiple&encode=url3986')
-    const questions = await res.json();
-    const formattedQuestions = questions.results.map((result) => ({
-        ...result,
-        question: decodeURIComponent(result.question),
-        correct_answer: decodeURIComponent(result.correct_answer),
-        incorrect_answers: result.incorrect_answers.map((answer) => (
+      const res = await fetch('https://opentdb.com/api.php?amount=10&category=17&difficulty=easy&type=multiple&encode=url3986')
+      const questions = await res.json();
+      const formattedQuestions = questions.results.map((result) => ({
+          ...result,
+          question: decodeURIComponent(result.question),
+          correct_answer: decodeURIComponent(result.correct_answer),
+          incorrect_answers: result.incorrect_answers.map((answer) => (
             decodeURIComponent(answer)
         ))
     }))
     setQuestions(formattedQuestions)
-
-  useEffect(() => {
-    const decodedQuestions = encodedQuestions.map(q => {
-      return {
-        ...q,
-        question: decodeHTML(q.question),
-        correct_answer: decodeHTML(q.correct_answer),
-        incorrect_answers: q.incorrect_answers.map(a => decodeHTML(a))
-      }
-    })
-
-    setQuestions(decodedQuestions)
-  }, [encodedQuestions])
+}
   const questionIndex = useSelector((state) => state.index)
 
   const dispatch = useDispatch()

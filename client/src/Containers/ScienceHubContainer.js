@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import ArticleService from '../Components/ArticleService'
 import ArticleList from '../Components/ArticleList'
 import TodaysQuiz from '../Components/TodaysQuiz'
+import Question from '../Components/Question'
 import './ScienceHubCss.css'
 import { Link } from "react-router-dom";
 import ErrorPage from "../Components/ErrorPage";
@@ -48,7 +49,7 @@ const ScienceHubContainer = () => {
         <Routes>
           <Route path="/articles" element={<ArticleList articles={articles} filter={filter} setFilter={setFilter} filteredArticles={filteredArticles} />} />
           <Route path="/articles/:id" element={<ScienceHubArticle articles={articles} />} />
-          <Route path="/todaysquiz" element={<TodaysQuiz />} />
+          <Route path="/todaysquiz" element={<Question />} />
           <Route path="/topscores" element={<TopScores />} />
           <Route path="/*" element={<ErrorPage />} />
         </Routes>
