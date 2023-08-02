@@ -1,4 +1,4 @@
-# JavaScript_Educational_App
+# JavaScript Educational App
 
 Our App is a Science Hub where you can search through science articles and read them. And to test your knowledge, you can take Today's Quiz, which features questions from
 the same subjects as the articles you've read. For doing a good job on your quiz (if you score 10/10), you will get rewarded with a random cute dog picture. The App could also
