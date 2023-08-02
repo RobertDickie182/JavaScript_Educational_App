@@ -23,21 +23,17 @@ const TodaysQuiz = () => {
     }, [])
 
     const getQuestions = async function () {
-        const res = await fetch("https://opentdb.com/api.php?amount=10&category=17&difficulty=easy&type=multiple&encode=url3986")
+        const res = await fetch('https://opentdb.com/api.php?amount=10&category=17&difficulty=easy&type=multiple&encode=url3986')
         const questions = await res.json();
-        setQuestions(questions.results)
-
-
-
-    // const getQuestions = async function() {
-    // fetch("https://opentdb.com/api.php?amount=10&category=17&difficulty=easy&type=multiple&encode=url3986")
-    //   .then(response => response.json())
-    //   .then(data => {
-    //     const questions = document.getElementById("results");
-    //     questions.results = JSON.stringify(data);
-    //   })
-
-        
+        const formattedQuestions = questions.results.map((result) => ({
+            ...result,
+            question: decodeURIComponent(result.question),
+            correct_answer: decodeURIComponent(result.correct_answer),
+            incorrect_answers: result.incorrect_answers.map((answer) => (
+                decodeURIComponent(answer)
+            ))
+        }))
+        setQuestions(formattedQuestions)
     }
 
     // const questionList = () => {
