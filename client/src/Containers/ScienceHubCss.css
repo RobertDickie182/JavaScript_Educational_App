@@ -1,6 +1,6 @@
 .parent {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
     font-size: large;
     --s: 50px;
     --c: #191b22;
@@ -32,6 +32,10 @@
     margin-left: 2%;
     margin-bottom: 3%;
     color: #52B788;
+    text-transform: uppercase;
+    font: 70 1em/1 "Oswald", sans-serif;
+    text-shadow: 2px 2px 6px rgba(64, 145, 108, 1);
+    
 }
 
 .list, list:link, list:visited  {
@@ -40,16 +44,22 @@
    box-shadow: 0 30px 20px -30px #40916C inset, 0 -30px 20px -30px #40916C inset;
    padding: 3%;
    max-width: 30%;
+
+   
 }
 
 .articlecolor {
     color: #52B788;
+    
+  
 }
 
 .filterbar {
     margin-bottom: 3%;
     max-width: 30%;
+    max-height: 10%;
     margin-left: 35%;
+    min-width: 30%;
     padding: 1%;
     background-image: linear-gradient(bottom, #95D5B2 5%, #74C69D 100%);
     background-image: -o-linear-gradient(bottom, #95D5B2 5%, #74C69D 100%);
@@ -94,4 +104,79 @@ border: 1px solid #081C15;
 
 
 outline: none;
+}
+
+.youfilter {
+    margin-left: 36%;
+    color: #52B788;
+    max-height: 10%;
+
+}
+
+.showarticletitle {
+
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: #B7E4C7;
+    letter-spacing: .1em;
+    padding: 0;
+    border-spacing: 0;
+    margin-top: 3%;
+    border-collapse: collapse;
+    max-height: 20%;
+    text-shadow: 
+      0 -1px 0 #fff, 
+      0 1px 0 #40916C, 
+      0 2px 0 #40916C, 
+      0 3px 0 #40916C, 
+      0 4px 0 #2D6A4F,         
+      0 5px 0 #2D6A4F, 
+      0 6px 0 #2D6A4F, 
+      0 7px 0 #2D6A4F, 
+      0 8px 0 #1B4332, 
+      0 9px 0 #1B4332, 
+      0 10px 0 #081C15, 
+      0 11px 0 #081C15, 
+      0 12px 0 #081C15, 
+      0 13px 0 #081C15, 
+      0 14px 0 #081C15, 
+      0 15px 0 #121212, 
+      0 22px 30px rgba(0, 0, 0, 0.9); 
+    }
+
+.showarticlebody {
+   
+    
+    color: #B7E4C7;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+
+.linequiz {
+    border-color: #1B4332;
+
+}
+
+.buttonquiz {
+  color: #B7E4C7;
+  padding: 15px 25px;
+  background-color: #40916C;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  max-width: 25%;
+  border: 0;
+  margin-left: 33%;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  cursor: pointer;
+
 }
