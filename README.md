@@ -21,3 +21,28 @@ Run these command into your terminal (make sure you are in the correct directory
 
 `npm start`
 
+> Server
+
+`npm install`
+
+`npm install express`
+
+`npm install cors`
+
+`npm install -D nodemon`
+
+`npm install --save-dev nodemon`
+
+`npm init -y`
+
+`npm install mongodb@3.5.7`
+
+`mongosh < db/seeds.js`
+
+`npm run seeds`
+
+`npm run server:dev`
+
+
+
+
