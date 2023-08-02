@@ -21,6 +21,8 @@ Run these command into your terminal (make sure you are in the correct directory
 
 `npm start`
 
+`npm install sweetalert2`
+
 > Server
 
 `npm install`
