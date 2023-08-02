@@ -52,4 +52,10 @@ Run these command into your terminal (make sure you are in the correct directory
 
 Colour pallete: [Click here for our beautiful greens](https://coolors.co/palette/d8f3dc-b7e4c7-95d5b2-74c69d-52b788-40916c-2d6a4f-1b4332-081c15)
 
+## Wireframe
+
+![how_the_website_looks](https://github.com/RobertDickie182/JavaScript_Educational_App/assets/130513545/2bbdadd7-dd9e-4eb3-8d9a-3e0bfc8eb687)
+
+
+
 
