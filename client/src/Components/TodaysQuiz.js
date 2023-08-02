@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
-import QuestionCard from "./QuestionCard";
+import Swal from 'sweetalert2'
+
 
 const TodaysQuiz = () => {
     const [questions, setQuestions] = useState([])
-    // const [correctAnswers, setCorrectAnswers] = useState(0)
+    
     const [answer1, setAnswer1] = useState("")
     const [answer2, setAnswer2] = useState("")
     const [answer3, setAnswer3] = useState("")
@@ -16,20 +17,6 @@ const TodaysQuiz = () => {
     const [answer9, setAnswer9] = useState("")
     const [answer10, setAnswer10] = useState("")
 
-    // const [score, setScore] = useState(0);
-    
-    // const [answers, setAnswers] = useState({ - this is linked to function on line 57 and is using a loop rather than the 10 if statements we are using.
-    //     1: "",
-    //     2: "",
-    //     3: "",
-    //     4: "",
-    //     5: "",
-    //     6: "",
-    //     7: "",
-    //     8: "",
-    //     9: "",
-    //     10: ""
-    // })
 
     useEffect(() => {
         getQuestions();
@@ -54,11 +41,6 @@ const TodaysQuiz = () => {
         event.preventDefault()
         let correctAnswers = 0;  
 
-        // for  (let key in Object.keys(answers)) {  -- see above
-        //     if (answers[key] === questions[key - 1].correct_answer){
-        //         correctAnswers++
-        //     }
-        // }
 
     
         if (answer1 === questions[0].correct_answer) {
@@ -91,14 +73,27 @@ const TodaysQuiz = () => {
         if (answer10 === questions[9].correct_answer) {
             correctAnswers++
         }
-        
-        if (correctAnswers === 10) {
-            alert(`You are a genius, you have scored a perfect 10!`)
-        }
 
-        alert(`You've scored ${correctAnswers} out of 10!`) 
+        
+        Swal.fire({
+            text: (`You've scored ${correctAnswers} out of 10!`),
+            background: '#1B4332',
+            color: '#D8F3DC',
+          })
         event.target.reset()
 
+        if (correctAnswers === 10) {
+            Swal.fire({
+                title: 'Sweet!',
+                text: 'You are a genius, you have scored a perfect 10. Have a cute dog!',
+                imageUrl: 'https://www.rd.com/wp-content/uploads/2021/01/GettyImages-588935825.jpg?resize=1536,1024',
+                imageWidth: 600,
+                imageHeight: 400,
+                imageAlt: 'Custom image',
+                background: '#1B4332',
+                color: '#D8F3DC'
+              })
+            }
     }
 
     
@@ -637,7 +632,7 @@ const TodaysQuiz = () => {
             <hr className="linequiz"></hr>
         </div>
         <button className="buttonquiz" role="button">Results!</button>
-        <p className="showarticletitle">Well done, you have scored </p>
+        
         </form>
             
         )
