@@ -10,5 +10,14 @@ Main page:
 
 Quiz Page:
 
-
 <img width="1000" alt="quiz_page" src="https://github.com/RobertDickie182/JavaScript_Educational_App/assets/130513545/53e09cb7-bd69-477a-b5d5-f79dd3b5690f">
+
+## Running Instructions
+
+Run these command into your terminal (make sure you are in the correct directory): 
+> Client
+
+`npm install`
+
+`npm start`
+
