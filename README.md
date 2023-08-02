@@ -43,6 +43,11 @@ Run these command into your terminal (make sure you are in the correct directory
 
 `npm run server:dev`
 
+## Technologies we have used 
 
+- HTML / CSS
+- JavaScript
+- React
+- MongoDB, Cors, Express, NodeMon
 
 
